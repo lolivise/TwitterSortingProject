@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewsTitleController">
+   <children>
+      <Label layoutX="261.0" layoutY="43.0" text="Collect News Title">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="showResult" layoutX="82.0" layoutY="222.0" prefHeight="460.0" prefWidth="464.0" />
+      <Button fx:id="returnBack" layoutX="691.0" layoutY="681.0" mnemonicParsing="false" onAction="#returnBack" text="Return">
+         <font>
+            <Font name="Times New Roman Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="search" layoutX="82.0" layoutY="149.0" mnemonicParsing="false" onAction="#search" text="Start Collecting" />
+      <Label layoutX="82.0" layoutY="194.0" text="Titles:" />
+      <TextArea fx:id="showData" layoutX="569.0" layoutY="222.0" prefHeight="344.0" prefWidth="151.0" />
+      <Label layoutX="569.0" layoutY="194.0" text="Current Data:" />
+      <Button fx:id="addWebsite" layoutX="569.0" layoutY="149.0" mnemonicParsing="false" onAction="#addWebsite" text="Add New Source" />
+      <ProgressBar fx:id="progress" layoutX="251.0" layoutY="148.0" prefHeight="30.0" prefWidth="200.0" progress="0.0" />
+   </children>
+</AnchorPane>

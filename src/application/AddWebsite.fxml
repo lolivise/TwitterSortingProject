@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddWebsiteController">
+   <children>
+      <Label layoutX="300.0" layoutY="40.0" text="New Website">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="115.0" layoutY="137.0" text="URL:" />
+      <Label layoutX="115.0" layoutY="179.0" text="Class Name:" />
+      <Label layoutX="411.0" layoutY="179.0" text="Value:" />
+      <Label layoutX="115.0" layoutY="226.0" text="Targed Element:" />
+      <TextArea fx:id="showTitles" layoutX="116.0" layoutY="301.0" prefHeight="288.0" prefWidth="591.0" />
+      <Label layoutX="116.0" layoutY="279.0" text="Result:" />
+      <TextField fx:id="inputURL" layoutX="158.0" layoutY="132.0" />
+      <TextField fx:id="className" layoutX="209.0" layoutY="174.0" prefHeight="30.0" prefWidth="183.0" />
+      <TextField fx:id="classValue" layoutX="461.0" layoutY="174.0" prefHeight="30.0" prefWidth="159.0" />
+      <TextField fx:id="element" layoutX="241.0" layoutY="221.0" prefHeight="30.0" prefWidth="151.0" />
+      <Button fx:id="search" layoutX="552.0" layoutY="221.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Label layoutX="116.0" layoutY="612.0" text="Category: " />
+      <TextField fx:id="defCategory" layoutX="192.0" layoutY="607.0" prefHeight="30.0" prefWidth="234.0" />
+      <Button fx:id="storeInDatabase" layoutX="441.0" layoutY="607.0" mnemonicParsing="false" onAction="#storeInDatabase" text="Store Website Info" />
+      <Button fx:id="returnBack" layoutX="706.0" layoutY="696.0" mnemonicParsing="false" onAction="#returnBack" text="return" />
+   </children>
+</AnchorPane>

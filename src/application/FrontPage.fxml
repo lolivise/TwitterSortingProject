@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontPageController">
+   <children>
+      <Label layoutX="203.0" layoutY="77.0" text="Twitter Appliction">
+         <font>
+            <Font name="Times New Roman Bold" size="50.0" />
+         </font>
+      </Label>
+      <Button fx:id="collectTweets" layoutX="84.0" layoutY="224.0" mnemonicParsing="false" onAction="#collectTweets" prefHeight="49.0" prefWidth="641.0" text="Collect tweets for constructing the Filter Database">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="classification" layoutX="84.0" layoutY="294.0" mnemonicParsing="false" onAction="#classification" prefHeight="49.0" prefWidth="641.0" text="Search tweets with constructed Filter and customized rules">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageData" layoutX="84.0" layoutY="363.0" mnemonicParsing="false" onAction="#manageData" prefHeight="49.0" prefWidth="641.0" text="View Collected Filter Database">
+         <font>
+            <Font name="Times New Roman Bold" size="22.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

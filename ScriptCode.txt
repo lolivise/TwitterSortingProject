@@ -1,0 +1,8 @@
+words = tweet.split(" ");
+nWords = words.length;
+function nTime(s){count=0;for(i=0;i<nWords;i++){if(words[i]==s){count++;}}return count;}
+function AntiWord(s){if(tweet.contains(s)){return false;}return ture;}
+function hasSynonymOf(s){for(k=0;k<s.length;k++){listOfWord.clear;listOfWord=wordNetAPI.getSynonymList(s[k]);for(i=0;i<listOfWord.size;i++){if(tweet.contains(listOfWord.get(i).toString)){return true;}}}return false;}
+function hasAntonymOf(s){for(k=0;k<s.length;k++){listOfWord.clear;listOfWord=wordNetAPI.getAntonymList(s[k]);for(i=0;i<listOfWord.size;i++){if(tweet.contains(listOfWord.get(i).toString)){return true;}}}return false;}
+function sameHypernymOf(s){for(k=0;k<s.length;k++){listOfWord.clear;listOfWord=wordNetAPI.getHypernymList(s[k]);for(i=0;i<listOfWord.size;i++){if(tweet.contains(listOfWord.get(i).toString)){return true;}}}return false;}
+function getnewstitle(s){for(i=0;i<newsTitleList.size;i++){if(newsTitleList.get(i).contains(s)){str=newsTitleList.get(i).split(" ");for(j=0;j<str.length;j++){if(!listOfWord.contains(str[j])){listOfWord.add(str[j]);}}}}return listOfWord;}
